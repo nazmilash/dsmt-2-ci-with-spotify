@@ -55,16 +55,17 @@ jobs:
     # This step runs the linter against the codebase
     # Replace the run block to use our preferred linter  
     - name: Lint with ruff
-      run: uvx ruff check .
+      run: uv run ruff check .
+
+    - name: Check formatting with ruff
+      run: uv run ruff format --check .
 
     
 
     - name: Type check with mypy
       run: uv run mypy .
        
-    # TODO: Add steps to run formatting steps and type checking
-    - name: Check formatting with ruff
-      run: uvx ruff format --check .
+
     
     - name: Sort Imports
       run: uvx isort. --check
