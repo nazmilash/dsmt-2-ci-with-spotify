@@ -1,6 +1,7 @@
 [project]
 name = "ci-with-spotify"
 version = "0.1.0"
+
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
